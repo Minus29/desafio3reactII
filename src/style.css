@@ -1,0 +1,37 @@
+.viewActiva {
+    color: red;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+.view {
+    color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+.imgHome{
+    background-image: url(https://www.coliseugeek.com.br/wp-content/uploads/2023/01/6776c-clickwallpapers-pokemon-4k-img2-scaled-1.jpg);
+    height: 100vw;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.imgHome h1{
+    padding: 20px;
+    color: white;
+}
+
+.personajeView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personajeView button{
+    margin: 15px;
+    width: 100px;
+    height: 40px;
+}
