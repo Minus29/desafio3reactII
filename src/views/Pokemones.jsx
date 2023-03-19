@@ -11,7 +11,6 @@ const Pokemones = () => {
     const [pokemones, setPokemones] = useState([]);
     const navigate = useNavigate();
 
-
     useEffect(() => {
         async function obtenePokemones() {
             const res = await fetch(' https://pokeapi.co/api/v2/pokemon?limit=10&offset=0');
@@ -34,11 +33,11 @@ const Pokemones = () => {
                 <option value="">Pokemones</option>
                 {
                     pokemones.map((pokemon, index) => {
-                        return <option key={index} value={index}>{pokemon.name}</option>
+                        return <option key={index} value={index + 1}>{pokemon.name}</option>
                     })
                 }
             </Form.Select>
-            <Button variant="dark" onClick={(e) => verDetalle(e)}>Detalle</Button>
+            <Button variant="dark" onClick={(e) => verDetalle()}>Detalle</Button>
         </div>
     )
 }
